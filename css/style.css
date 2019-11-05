@@ -57,7 +57,8 @@ a:focus{
     border:2px solid black;
   }
 
-a:active{
+.current{
+  text-decoration:underline;
   color: blueviolet;
 }
 
@@ -435,7 +436,8 @@ div.at-container {
   .container{
     grid-template-columns:1fr 1fr;
   }
-}
+  }
+
 
 @media all and (min-width:1120px){
   .gallery-container {
