@@ -1,9 +1,4 @@
-
-
-
-
 /* desktop */
-@media screen and (min-width: 1100px){
 html{
   scroll-behavior: smooth;
 }
@@ -12,9 +7,9 @@ html{
   grid-row-gap:15px;
   display:grid;
   grid-template-rows:200px 400px 300px 200px;
-  grid-template-columns:400px 400px 400px; 
+  grid-template-columns:1fr 1fr 1fr; 
   width: 100vw; 
-} 
+}  
 
 body{
   background-color: pink;
@@ -62,6 +57,10 @@ a:focus{
     border:2px solid black;
   }
 
+a:active{
+  color: blueviolet;
+}
+
 footer{
   color: black;
   padding-top: 30px;
@@ -84,14 +83,13 @@ footer{
 }
 
 .parallax-image{
-  background-attachment: fixed; /* Parallax effect */
+  background-attachment: fixed; 
   background-image: url('../images/u_of_m_pillow.jpg');  
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;       
   color: white;
-  height: 400px;                /* Parallax effect */
-  /*Your code here - cover the entire row*/
+  height: 400px;                
   grid-column:1/span 3;
   grid-row: 2 /span 4;
 }
@@ -193,33 +191,36 @@ footer{
   color: #36A0FF;
   padding-left:2%;
   }
+
   form div{
   display:inline-block;
-  width: 90%;
+  width: 80%;
+  padding:3%;
   }
-  button.btn{             /*Why couldn't I just use button?*/
+
+  button.btn{             
   display: block;
   margin: 0 auto;
-        }
-  .gallery-container{
-    grid-row-gap:15px;
-    display:grid;
-    grid-template-rows:100px 400px 400px 400px;
-    grid-template-columns:400px 400px 400px; 
-    width: 100vw; 
-        }
-        
-  .gallery-head{
-    font-size: 50px;
+  }
+ 
+  /* .gallery-container {
+    grid-row-gap: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    width: 100vw;
+  }
+  
+  .gallery-head h1{
+    font-size: 45px;
     line-height: 1;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
     grid-row:1/span 1;
-    grid-column:2/span 1;}
-
-
+    grid-column:1;
+  } */
         
-.image1{
+/* .image1{
   grid-row:2/span 1;
   grid-column:1 span 1;
 }
@@ -232,6 +233,7 @@ footer{
 .image2{
   grid-row:2/span 1;
   grid-column:2/span 1;
+  filter: grayscale(100%);
 }
 
 .image2 img{
@@ -313,7 +315,7 @@ footer{
 .image9 img{
   width: 350px;
   height:200px;
-}
+} */
 
 div.at-container {
   display: flex;
@@ -330,6 +332,8 @@ div.at-container {
   animation-iteration-count: 2;
   animation-direction: normal;
 }
+
+/* https://angrytools.com/css/animation/ */
 @keyframes angry-animation {
   0%{
     -webkit-transform: translateY(0);
@@ -375,4 +379,116 @@ div.at-container {
   width: 700px;
   height:300px;
 }
+
+.flip-card {
+  background-color: transparent;
+  width: 700px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:white;
+  color: navy;
+  transform: rotateY(180deg);
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
+
+@media all and (min-width:720px){
+  .gallery-container {
+  grid-template-columns: 1fr 1fr;
+}
+  .container{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media all and (min-width:1120px){
+  .gallery-container {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container{
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.index-image{
+  grid-row:1/span 1;
+  grid-column:1;
+  justify-self:center;
+  margin:0;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  padding-right:20px;
+  display:block;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: relative;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a:focus{
+    top:0px;
+    transition:none;
+  }
+
+:focus{
+    border:2px solid black;
+  }
+} 
+
