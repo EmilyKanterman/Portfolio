@@ -94,7 +94,7 @@ footer{
   background-repeat: no-repeat; 
   background-size: cover;       
   color: white;
-  height: 650px;                
+  height: 200px;                
   grid-column:1/-1;
   /* grid-row: 2 /span 4; */
 }
@@ -492,7 +492,8 @@ a:focus{
   .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
   }
-  
+
+  }
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
