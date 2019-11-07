@@ -95,8 +95,11 @@ footer{
   background-repeat: no-repeat; 
   background-size: cover;       
   color: white;
-  height: 200px;                
+  height: 200px;
+  width:90%;                
   grid-column:1/-1;
+  margin:0 auto;
+  width:90%;
   /* grid-row: 2 /span 4; */
 }
 
@@ -509,6 +512,7 @@ grid-template-columns:1fr 1fr 1fr;
   color: white;
   height: 600px;               
   grid-column:1/-1;
+  margin:0 auto;
   /* grid-row: 2 /span 4; */
 }
 
