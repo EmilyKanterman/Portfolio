@@ -95,12 +95,13 @@ footer{
   background-repeat: no-repeat; 
   background-size: cover;       
   color: white;
-  height: 650px;              
+  height: 750px;              
   grid-column:1/-1;
   margin:0 auto;
   width:90%;
-  /* grid-row: 2 /span 4; */
-}
+  grid-row: 2 /span 4; 
+ }  
+
 
 .index-image{
     /* grid-row:1/span 1; */
@@ -511,9 +512,10 @@ grid-template-columns:1fr 1fr 1fr;
   background-repeat: no-repeat; 
   background-size: cover;       
   color: white;
-  height: 600px;               
+  height: 400px;               
   grid-column:1/-1;
   margin:0 auto;
+  width:90%
   /* grid-row: 2 /span 4; */
 }
 
