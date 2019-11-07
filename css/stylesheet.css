@@ -60,7 +60,7 @@ a:focus{
 
 .current{
   text-decoration:underline;
-  color: blueviolet;
+  color:navy;
 }
 
 footer{
@@ -104,21 +104,25 @@ footer{
     grid-column:1/-1;
     justify-self:center;
     margin:0;
-    padding:10px
-
+    padding:10px;
 }
 
 .words{
   /* grid-row:3/span 1; */
   grid-column:1/2;
-  padding:5px
+  padding:5px;
 }
 
 .words h2{
   text-decoration: underline;
+  border:2px solid navy;
+  padding:10px;
+  text-align:center;
+  color:navy;
 }
 .words p{
   padding:10px;
+
 }
 
 .coursework-head{
@@ -188,15 +192,28 @@ footer{
   grid-column:1/-1;
 }
 
+.contact-image{
+  grid-column:1/-1;
+  justify-self:center;
+  margin:0;
+  padding:10px;
+}
+
+.contact-words p{
+  text-align:center;
+  padding:10px;
+  border:2px solid navy;
+}
+
 .header {
-  color: #36A0FF;
+  color:black;
   font-size: 27px;
   padding: 10px;
         }
 
 .bigicon {
   font-size: 35px;
-  color: #36A0FF;
+  color: black;
   padding-left:2%;
   }
 
@@ -207,57 +224,43 @@ footer{
   }
 
   button.btn{             
-  display: block;
+  display: inline;
   margin: 0 auto;
   }
 
-div.at-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.at-item {
-  color:red;
-  animation-name: angry-animation;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-iteration-count: 2;
-  animation-direction: normal;
-}
-
-/* https://angrytools.com/css/animation/ */
-@keyframes angry-animation {
-  0%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+  div.at-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
-  20%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+  .at-item {
+    color:navy;
+    animation-name: angry-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
   }
-  40%{
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+  @keyframes angry-animation {
+    0%{
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    50%{
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    100%{
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
   }
-  50%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  60%{
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-  80%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
+  
 
 .index-image img{
   width: 175px;
@@ -274,6 +277,12 @@ div.at-container {
   height:300px;
 }
 
+.contact-image img{
+  width: 350px;
+  height:300px;
+}
+
+  
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; /* Removes scroll animation */
@@ -471,6 +480,10 @@ a:focus{
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
   }
   
