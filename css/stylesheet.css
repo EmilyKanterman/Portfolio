@@ -95,8 +95,7 @@ footer{
   background-repeat: no-repeat; 
   background-size: cover;       
   color: white;
-  height: 200px;
-  width:90%;                
+  height: 650px;              
   grid-column:1/-1;
   margin:0 auto;
   width:90%;
@@ -189,6 +188,7 @@ footer{
 .experience-words h2{
   text-decoration:underline;
   text-align:center;
+  padding:5px;
 }
 
 .contact-head{
