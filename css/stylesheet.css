@@ -4,11 +4,12 @@ html{
 }
 
 .container{
-  grid-row-gap:15px;
+  /* grid-row-gap:15px; */
   display:grid;
-  grid-template-rows:200px 400px 300px 200px;
-  grid-template-columns:1fr 1fr 1fr; 
+  /* grid-template-rows:auto auto auto auto auto; */
+  grid-template-columns:1fr; 
   width: 100vw; 
+  /* height:600px; */
 }  
 
 body{
@@ -24,7 +25,7 @@ nav ul{
 
 nav li{
   padding-right:20px;
-  display:inline;
+  display:block;
 }
 
 nav a{
@@ -64,13 +65,13 @@ a:focus{
 
 footer{
   color: white;
-  padding-top: 30px;
+  padding-top: 5px; 
   text-align: center;
-  height:10%;
+  /* height:10%; */
   background-color:black;
   width:100%;
-  /* grid-column: 1/ span 3;
-  grid-row: 5/span 1; */
+  display:block;
+  grid-column:1/-1;
 }
 
 .index-head{
@@ -78,12 +79,12 @@ footer{
   line-height: 1;
   text-align: center;
   padding: 50px 0;
-  grid-row:1/span 1;
-  grid-column:2/span 1;
+  /* grid-row:1/span 1; */
+  grid-column:1/-1;
 }
 .index-head h1{
-  grid-row:1/span 1;
-  grid-column:2/span 1;  
+  /* grid-row:1/span 1; */
+  grid-column:1/-1;  
 }
 
 .parallax-image{
@@ -93,21 +94,23 @@ footer{
   background-repeat: no-repeat; 
   background-size: cover;       
   color: white;
-  height: 400px;                
-  grid-column:1/span 3;
-  grid-row: 2 /span 4;
+  height: 650px;                
+  grid-column:1/-1;
+  /* grid-row: 2 /span 4; */
 }
 
 .index-image{
-    grid-row:1/span 1;
-    grid-column:3;
+    /* grid-row:1/span 1; */
+    grid-column:1/-1;
     justify-self:center;
     margin:0;
+    padding:10px
+
 }
 
 .words{
-  grid-row:3/span 1;
-  grid-column:1/span 3;
+  /* grid-row:3/span 1; */
+  grid-column:1/2;
   padding:5px
 }
 
@@ -123,25 +126,25 @@ footer{
   line-height: 1;
   text-align: center;
   padding: 50px 0;
-  grid-row:1/span 1;
-  grid-column:2/span 1;
+  /* grid-row:1/span 1; */
+  grid-column:1/-1;
 }
 
 .coursework-head h1{
-  grid-row:1/span 1;
-  grid-column:2/span 1;
+  /* grid-row:1/span 1; */
+  grid-column:1/-1;
 }
 
 .coursework-image{
-  grid-row:2/span 1;
-  grid-column:2/ span 1;
+  /* grid-row:2/span 1; */
+  grid-column:1/-1;
   justify-self:center;
   margin:0;
 }
 
 .course-words{
-  grid-row:3/span 1;
-  grid-column:1/span 3;
+  /* grid-row:3/span 1; */
+  grid-column:1/-1;
   padding:5px
 }
 
@@ -154,20 +157,21 @@ footer{
   line-height: 1;
   text-align: center;
   padding: 50px 0;
-  grid-row:1/span 1;
-  grid-column:2/span 1;
+  /* grid-row:1/span 1; */
+  grid-column:1/-1;
 }
 
 .experience-image{
-  grid-row:2/span 1;
-  grid-column:2/ span 1;
+  /* grid-row:2/span 1; */
+  grid-column:1/-1;
   justify-self:center;
   margin:0;
+  filter: grayscale(100%);
 }
 
 .experience-words{
-  grid-row:3/span 1;
-  grid-column:1/span 3;
+  /* grid-row:3/span 1; */
+  grid-column:1/-1;
   padding:5px
 }
 
@@ -180,8 +184,8 @@ footer{
   line-height: 1;
   text-align: center;
   padding: 50px 0;
-  grid-row:1/span 1;
-  grid-column:2/span 1;
+  /* grid-row:1/span 1; */
+  grid-column:1/-1;
 }
 
 .header {
@@ -206,120 +210,6 @@ footer{
   display: block;
   margin: 0 auto;
   }
- 
-  /* .gallery-container {
-    grid-row-gap: 15px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    width: 100vw;
-  }
-  
-  .gallery-head h1{
-    font-size: 45px;
-    line-height: 1;
-    text-align: center;
-    padding: 30px 0;
-    grid-row:1/span 1;
-    grid-column:1;
-  } */
-        
-/* .image1{
-  grid-row:2/span 1;
-  grid-column:1 span 1;
-}
-
-.image1 img{
-  width: 350px;
-  height:200px;
-}
-
-.image2{
-  grid-row:2/span 1;
-  grid-column:2/span 1;
-  filter: grayscale(100%);
-}
-
-.image2 img{
-  width: 350px;
-  height:200px;
-}
-
-
-.image3{
-  grid-row:2/span 1;
-  grid-column:3/ span 1;
-}
-
-.image3 img{
-  width: 350px;
-  height:200px;
-}
-
-
-.image4{
-  grid-row:3/span 1;
-  grid-column:1/span 1;
-}
-
-.image4 img{
-  width: 350px;
-  height:200px;
-}
-
-
-.image5{
-  grid-row:3/span 1;
-  grid-column:2/span 1;
-}
-
-.image5 img{
-  width: 350px;
-  height:200px;
-}
-
-
-.image6{
-  grid-row:3/span 1;
-  grid-column:3/span 1;
-}
-
-.image6 img{
-  width: 350px;
-  height:200px;
-}
-
-.image7{
-  grid-row:4/span 1;
-  grid-column:1/span 1;
-}
-
-.image7 img{
-  width: 350px;
-  height:200px;
-}
-
-
-.image8{
-  grid-row:4/span 1;
-  grid-column:2/span 1;
-}
-
-.image8 img{
-  width: 350px;
-  height:200px;
-}
-
-
-.image9{
-  grid-row:4/span 1;
-  grid-column:3/span 1;
-}
-
-.image9 img{
-  width: 350px;
-  height:200px;
-} */
 
 div.at-container {
   display: flex;
@@ -375,88 +265,151 @@ div.at-container {
 }
 
 .experience-image img{
-  width: 400px;
+  width: 350px;
   height:300px;
 }
 
 .coursework-image img{
-  width: 700px;
+  width: 350px;
   height:300px;
 }
 
-
-
-.flip-card {
-  background-color: transparent;
-  width: 700px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color:white;
-  color: navy;
-  transform: rotateY(180deg);
-}
-
-
-/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: relative;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a:focus{
+      top:0px;
+      transition:none;
+    }
+  
+  :focus{
+      border:2px solid black;
+    }
+  }
 
 
 @media all and (min-width:720px){
-  .gallery-container {
+.gallery-container {
   grid-template-columns: 1fr 1fr;
 }
   .container{
     grid-template-columns:1fr 1fr;
   }
+
+  nav ul{
+    list-style-type: none;
   }
+  
+  nav li{
+    padding-right:20px;
+    display:block;
+  }
+  
+  nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover{
+    text-decoration: underline;
+  }
+  
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: relative;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a:focus{
+      top:0px;
+      transition:none;
+    }
+  
+  :focus{
+      border:2px solid black;
+    }
+  .words{
+    grid-column:1/span -1;
+  }
+
+  .index-image{
+    /* grid-row:1/span 1; */
+    grid-column:1/-1;
+    justify-self:center;
+    margin:0;
+  }
+
+  .coursework-image{
+    /* grid-row:2/span 1; */
+    grid-column:1/-1;
+    justify-self:center;
+    margin:0;
+  }  
+
+  .index-image{
+    /* grid-row:1/span 1; */
+    grid-column:1/-1;
+    justify-self:center;
+    margin:0;
+}
+
+
+.experience-image{
+  grid-column:1/-1;
+  justify-self:center;
+  margin:0;
+}
 
 
 @media all and (min-width:1120px){
-  .gallery-container {
-  grid-template-columns: 1fr 1fr 1fr;
+.gallery-container {
+grid-template-columns: 1fr 1fr 1fr;
 }
 .container{
-  grid-template-columns:1fr 1fr 1fr;
+grid-template-columns:1fr 1fr 1fr;
+}
+
+.parallax-image{
+  background-attachment: fixed; 
+  background-image: url('../images/u_of_m_pillow.jpg');  
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  color: white;
+  height: 650px;                
+  grid-column:1/-1;
+  /* grid-row: 2 /span 4; */
+}
+
+.words{
+  grid-column:1/-1;
 }
 
 .index-image{
-  grid-row:1/span 1;
-  grid-column:1;
+  /* grid-row:1/span 1; */
+  grid-column:1/-1;
   justify-self:center;
   margin:0;
+  padding:10px;
+  
 }
 
 nav ul{
@@ -465,7 +418,7 @@ nav ul{
 
 nav li{
   padding-right:20px;
-  display:block;
+  display:inline;
 }
 
 nav a{
@@ -497,5 +450,51 @@ a:focus{
 :focus{
     border:2px solid black;
   }
-} 
 
+  .flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:white;
+    color: navy;
+    transform: rotateY(180deg);
+  }
+}
+}
+
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
