@@ -1,5 +1,11 @@
+.cap{
+  font-family:Verdana;
+  font-size:15px;
+  text-align:center;
+}
+
 .gallery-container {
-  grid-row-gap: 15px;
+  /* grid-row-gap: 15px; */
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
