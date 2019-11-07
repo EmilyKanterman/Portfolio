@@ -174,8 +174,8 @@ footer{
 
 .experience-image{
   /* grid-row:2/span 1; */
-  grid-column:1/-1;
-  justify-self:center;
+  /* grid-column:1/-1;
+  justify-self:center; */
   margin:0;
   filter: grayscale(100%);
 }
@@ -188,6 +188,7 @@ footer{
 
 .experience-words h2{
   text-decoration:underline;
+  text-align:center;
 }
 
 .contact-head{
@@ -572,7 +573,15 @@ a:focus{
     border:2px solid black;
   }
 
-.words h2{
+.words h3{
+  text-align:left;
+}
+
+.course-words h2{
+  text-align:left;
+}
+
+.experience-words h2{
   text-align:left;
 }
 
