@@ -2,6 +2,7 @@
   font-family:Verdana;
   font-size:15px;
   text-align:center;
+  padding:5px;
 }
 
 .gallery-container {
@@ -28,19 +29,32 @@
     text-shadow: 
       0 -1px 0 #fff, 
       0 22px 30px rgba(0, 0, 0, 0.9);
+      margin-bottom:5px;
+
   } 
 
+/* .image1 img{
+  filter: grayscale(100%);
+} */
 
+.image1 img:hover{
+  filter: grayscale(100%);
+}
+
+
+/* 
 .current{
   text-decoration:underline;
   color: navy;
-}
+} */
 
 .gallery-container img{ 
   width:100%;
   height:250px;
-  padding-top:100px;
+  /* padding-top:100px; */
 }
+
+
 
 @media all and (min-width:720px){
   .gallery-container {
