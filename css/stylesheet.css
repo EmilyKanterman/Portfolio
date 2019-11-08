@@ -177,7 +177,6 @@ footer{
   /* grid-column:1/-1;
   justify-self:center; */
   margin:0;
-  filter: grayscale(100%);
 }
 
 .experience-words{
@@ -512,8 +511,8 @@ grid-template-columns:1fr 1fr 1fr;
   background-repeat: no-repeat; 
   background-size: cover;       
   color: white;
-  height: 400px;               
-  grid-column:1/-1;
+  height: 500px;               
+  /* grid-column:1/-1; */
   margin:0 auto;
   width:90%
   
