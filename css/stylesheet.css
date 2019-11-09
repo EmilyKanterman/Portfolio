@@ -248,6 +248,7 @@ footer{
     justify-content: center;
     height: 100%;
   }
+  
   .at-item {
     color:navy;
     animation-name: angry-animation;
@@ -275,6 +276,7 @@ footer{
     }
   }
   
+  /* https://angrytools.com/css/animation/ */
 
 /* .index-image img{
   width: 175px;
