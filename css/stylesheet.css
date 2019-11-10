@@ -1,15 +1,11 @@
-/* desktop */
 html{
   scroll-behavior: smooth;
 }
 
 .container{
-  /* grid-row-gap:15px; */
   display:grid;
-  /* grid-template-rows:auto auto auto auto auto; */
   grid-template-columns:1fr; 
   width: 100vw; 
-  /* height:600px; */
 }  
 
 body{
@@ -67,11 +63,9 @@ footer{
   color: white;
   padding-top: 5px; 
   text-align: center;
-  /* height:10%; */
   background-color:black;
   width:100%;
   display:block;
-  grid-column:1/-1;
   margin:0;
 }
 
@@ -80,12 +74,6 @@ footer{
   line-height: 1;
   text-align: center;
   padding: 50px 0;
-  /* grid-row:1/span 1; */
-  grid-column:1/-1;
-}
-.index-head h1{
-  /* grid-row:1/span 1; */
-  grid-column:1/-1; 
 
 }
 
@@ -97,25 +85,9 @@ footer{
   background-size: 60%;       
   color: white;
   height: 500px;  
-  /* width:50px;             */
   grid-column:1/-1;
   margin:0 auto;
  }  
-
-
-/* .index-image{ */
-    /* grid-row:1/span 1; */
-    /* grid-column:1/-1;
-    justify-self:center;
-    margin:0;
-    padding:10px;
-} */
-
-.words{
-  /* grid-row:3/span 1; */
-  grid-column:1/-1;
-  padding:5px;
-}
 
 .words h3{
   text-decoration: underline;
@@ -132,29 +104,12 @@ footer{
   font-size: 50px;
   line-height: 1;
   text-align: center;
-  padding: 50px 0;
-  /* grid-row:1/span 1; */
-  grid-column:1/-1;
-}
-
-.coursework-head h1{
-  /* grid-row:1/span 1; */
-  grid-column:1/-1;
+  padding: 50px 0; 
 }
 
 .coursework-image{
-  /* grid-row:2/span 1; */
-  /* grid-column:1/-1; */
   justify-self:center;
   margin:0;
-
-}
-
-.course-words p{
-  /* grid-row:3/span 1; */
-  /* grid-column:1/-1; */
-  /* grid-column:1/-1; */
-  padding:5px
 }
 
 .course-words h2{
@@ -163,32 +118,30 @@ footer{
   text-align:center;
 }
 
+.course-words p{
+  padding:10px
+}
+
 .experience-head{
   font-size: 50px;
   line-height: 1;
   text-align: center;
   padding: 50px 0;
-  /* grid-row:1/span 1; */
-  grid-column:1/-1;
 }
 
 .experience-image{
-  /* grid-row:2/span 1; */
-  /* grid-column:1/-1;
-  justify-self:center; */
+  justify-self:center;
   margin:0;
 }
 
-.experience-words{
-  /* grid-row:3/span 1; */
-  grid-column:1/-1;
-  padding:5px
+.experience-words p{
+  padding:10px
 }
 
 .experience-words h2{
   text-decoration:underline;
   text-align:center;
-  padding:5px;
+  padding:10px;
 }
 
 .contact-head{
@@ -196,16 +149,14 @@ footer{
   line-height: 1;
   text-align: center;
   padding: 50px 0;
-  /* grid-row:1/span 1; */
-  grid-column:1/-1;
+
 }
 
 .contact-image{
-  grid-column:1/-1;
   justify-self:center;
   margin:0;
   padding:10px;
-}
+} 
 
 .contact-words h1{
   text-align:center;
@@ -213,23 +164,18 @@ footer{
   border:2px solid navy;
 }
 
-.contact-words p{
-  text-align:left;
-  size:10px;
-}
 
-.header {
+ .header {
   color:black;
   font-size: 27px;
-  padding: 10px;
-  /* text-align:center; */
-        }
+  padding: 10px; 
+   } 
 
 .bigicon {
   font-size: 35px;
   color: black;
   padding-left:2%;
-  }
+  } 
 
   form div{
   display:inline-block;
@@ -278,10 +224,6 @@ footer{
   
   /* https://angrytools.com/css/animation/ */
 
-/* .index-image img{
-  width: 175px;
-  height:200px;
-} */
 
 .experience-image img{
   width: 350px;
@@ -303,10 +245,9 @@ footer{
   width: 350px;
   height: 300px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -316,7 +257,6 @@ footer{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -325,7 +265,6 @@ footer{
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -333,24 +272,20 @@ footer{
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
 .flip-card-back {
   background-color:white;
   color: navy;
   transform: rotateY(180deg);
 }
 
-
-  
 @media screen and (prefers-reduced-motion: reduce){
   html{
-      scroll-behavior: auto; /* Removes scroll animation */
+      scroll-behavior: auto; 
   }
   .skip a{
     background: white;
@@ -372,7 +307,6 @@ footer{
       border:2px solid black;
     }
   }
-
 
 @media all and (min-width:720px){
 .gallery-container {
@@ -420,36 +354,34 @@ footer{
   :focus{
       border:2px solid black;
     }
-  .words{
-    grid-column:1/span -1;
-  }
-
-  /* .index-image{ */
-    /* grid-row:1/span 1; */
-    /* grid-column:1/-1;
-    justify-self:center;
-    margin:0;
-  } */
 
   .course-words{
     grid-column:1/span-1
   }
   .coursework-image{
-    /* grid-row:2/span 1; */
     grid-column:1/-1;
     justify-self:center;
     margin:0;
   }  
+
+  .experience-words {
+    grid-column:1/span-1
+  } 
+
+  .experience-image{
+    grid-column:1/-1;
+    justify-self:center;
+    margin:0;
+  }
 
   .flip-card {
     background-color: transparent;
     width: 350px;
     height: 300px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
   }
   
-  /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -459,7 +391,6 @@ footer{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
@@ -468,8 +399,6 @@ footer{
     transform: rotateY(180deg);
   }
 
-  }
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -477,26 +406,16 @@ footer{
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
   
-  /* Style the back side */
   .flip-card-back {
     background-color:white;
     color: navy;
     transform: rotateY(180deg);
   }
-
-
-.experience-image{
-  grid-column:1/-1;
-  justify-self:center;
-  margin:0;
-}
-
 
 @media all and (min-width:1120px){
 .gallery-container {
@@ -514,29 +433,9 @@ grid-template-columns:1fr 1fr 1fr;
   background-size: cover;       
   color: white;
   height: 500px;               
-  /* grid-column:1/-1; */
   margin:0 auto;
   width:90%
-  
-  /* grid-row: 2 /span 4; */
 }
-
-/* .words{
-  grid-column:1/-1;
-} */
-
-/* .course-words{
-  grid-column:1/-1;
-} */
-
-/* .index-image{
-  /* grid-row:1/span 1; */
-  /* grid-column:1/-1;
-  justify-self:center;
-  margin:0;
-  padding:10px;
-  
-} */ 
 
 nav ul{
   list-style-type: none;
@@ -589,15 +488,21 @@ a:focus{
   text-align:left;
 }
 
+.contact-image{
+  grid-column:1/-1;
+  justify-self:center;
+  margin:0;
+  padding:10px;
+}
+
   .flip-card {
     background-color: transparent;
     width: 350px;
     height: 300px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
   }
   
-  /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -607,7 +512,6 @@ a:focus{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
@@ -616,22 +520,18 @@ a:focus{
     transform: rotateY(180deg);
   }
 
-  
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
   }
-  
-  /* Style the front side (fallback if image is missing) */
+
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
   
-  /* Style the back side */
   .flip-card-back {
     background-color:white;
     color: navy;

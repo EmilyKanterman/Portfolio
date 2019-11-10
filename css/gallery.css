@@ -6,7 +6,6 @@
 }
 
 .gallery-container {
-  /* grid-row-gap: 15px; */
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
@@ -33,27 +32,16 @@
 
   } 
 
-/* .image1 img{
-  filter: grayscale(100%);
-} */
 
 .image1 img:hover{
   filter: grayscale(100%);
 }
 
 
-/* 
-.current{
-  text-decoration:underline;
-  color: navy;
-} */
-
 .gallery-container img{ 
   width:100%;
   height:250px;
-  /* padding-top:100px; */
 }
-
 
 
 @media all and (min-width:720px){
